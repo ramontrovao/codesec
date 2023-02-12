@@ -11,12 +11,19 @@ export const GlobalStyles = createGlobalStyle`
         }
     }
 
-
     body, textarea, input, button {
         font-family: "Raleway", sans-serif;
     } 
 
     body {
         background: ${({ theme: { colors, fontSizes } }) => colors["gray700"]};
+    }
+
+    img, svg {
+        -webkit-user-drag: none;
+        user-select: none;
+        -moz-user-select: none;
+        -webkit-user-select: none;
+        -ms-user-select: none;
     }
 `;

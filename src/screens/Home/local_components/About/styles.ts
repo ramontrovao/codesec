@@ -2,7 +2,7 @@ import styled, { css } from "styled-components";
 
 export const AboutSection = styled.section`
   min-height: 75vh;
-  padding: 3.5rem;
+  padding: 10rem 3.5rem;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -26,6 +26,8 @@ export const LeftWrapper = styled.div`
     span {
       color: ${colors["brand-red"]};
       font-size: ${fontSizes["medium-md"]};
+      letter-spacing: 0.15rem;
+      font-weight: bold;
     }
 
     h2 {
@@ -48,8 +50,10 @@ export const LeftWrapper = styled.div`
         display: flex;
         align-items: center;
         gap: 0.5rem;
+
         color: ${colors["white100"]};
         font-size: ${fontSizes["medium-md"]};
+        font-weight: bold;
 
         div {
           display: flex;
