@@ -3,11 +3,12 @@ import styled, { css } from "styled-components";
 export const AdvantageSection = styled.section`
   ${({ theme: { colors, fontSizes } }) => css`
     min-height: 25vh;
+    padding: 5rem 0;
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 2rem;
     flex-wrap: wrap;
+    gap: 2rem;
 
     div {
       display: flex;
