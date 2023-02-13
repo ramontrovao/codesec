@@ -6,7 +6,7 @@ export const ClassesTimelineSection = styled.section`
     flex-direction: column;
     align-items: center;
 
-    padding: 5rem 0;
+    padding: 5rem 3.5rem;
 
     a {
       padding: 1rem;
@@ -25,6 +25,10 @@ export const ClassesTimelineSection = styled.section`
       &:hover {
         background: ${colors["brand-red-dark"]};
       }
+    }
+
+    @media (max-width: 768px) {
+      padding: 5rem 0;
     }
   `}
 `;
