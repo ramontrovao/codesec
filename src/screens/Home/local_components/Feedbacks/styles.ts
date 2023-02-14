@@ -1,6 +1,10 @@
 import styled, { css } from "styled-components";
 import { Title } from "../ClassesTimeline/styles";
 
+interface CustomerInfoProps {
+  isActive: boolean;
+}
+
 export const FeedbacksSection = styled.section`
   padding: 5rem 7rem;
   min-height: 100vh;
@@ -46,30 +50,38 @@ export const CustomersInfosSection = styled.section`
     display: flex;
     flex-direction: column;
     gap: 2.5rem;
+  `}
+`;
+
+export const CustomerInfo = styled.div<CustomerInfoProps>`
+  ${({ theme: { colors, fontSizes }, isActive }) => css`
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+
+    img {
+      border-radius: 999px;
+      transition: opacity 0.25s;
+      opacity: ${isActive ? 1 : 0.25};
+    }
 
     div {
       display: flex;
-      align-items: center;
-      gap: 2rem;
+      flex-direction: column;
+      gap: 0.25rem;
 
-      img {
-        border-radius: 999px;
+      strong {
+        color: ${colors["brand-red-dark"]};
+        font-size: 1.25rem;
+        transition: opacity 0.25s;
+        opacity: ${isActive ? 1 : 0.25};
       }
 
-      div {
-        display: flex;
-        flex-direction: column;
-        gap: 0.25rem;
-
-        strong {
-          color: ${colors["brand-red-dark"]};
-          font-size: 1.25rem;
-        }
-
-        span {
-          color: ${colors["gray200"]};
-          font-size: ${fontSizes["medium-md"]};
-        }
+      span {
+        color: ${colors["gray200"]};
+        font-size: ${fontSizes["medium-md"]};
+        transition: opacity 0.25s;
+        opacity: ${isActive ? 1 : 0.25};
       }
     }
   `}

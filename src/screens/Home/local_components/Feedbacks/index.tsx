@@ -1,8 +1,15 @@
+// Next/React
+
 import Image from "next/image";
+import { useState } from "react";
+
+// Libraries
+
 import { ArrowLeft, ArrowRight } from "phosphor-react";
-import { useEffect, useState } from "react";
+
 import {
   ButtonsWrapper,
+  CustomerInfo,
   CustomersInfosSection,
   CustomersWrapper,
   FeedbackParagraphContainer,
@@ -72,8 +79,14 @@ export function Feedbacks() {
         <CustomersWrapper>
           <CustomersInfosSection>
             {customersInfos.map(
-              ({ costumerName, costumerState, costumerVocation, id }) => (
-                <div key={id}>
+              (
+                { costumerName, costumerState, costumerVocation, id },
+                index
+              ) => (
+                <CustomerInfo
+                  key={id}
+                  isActive={index === currentActiveCustomer ? true : false}
+                >
                   <Image
                     src="/doguinhofofo.jpg"
                     width={72}
@@ -86,15 +99,17 @@ export function Feedbacks() {
                     <span>{costumerVocation}</span>
                     <span>{costumerState}</span>
                   </div>
-                </div>
+                </CustomerInfo>
               )
             )}
           </CustomersInfosSection>
 
           <FeedbackParagraphContainer>
-            <Image src="/quotation.svg" width={24} height={24} alt="" />
+            <div>
+              <Image src="/quotation.svg" width={24} height={24} alt="" />
 
-            <p>{customersInfos[currentActiveCustomer].costumerFeedback}</p>
+              <p>{customersInfos[currentActiveCustomer].costumerFeedback}</p>
+            </div>
 
             <ButtonsWrapper>
               <button onClick={handleActivePreviousFeedback}>
