@@ -57,15 +57,63 @@ export const TopMiddleWrapper = styled.div`
       width: 2rem;
       height: 2rem;
       border-radius: 8px;
+
       background: ${colors["brand-red"]};
+      animation: infinite circleLeftAnimation 20s;
     }
 
     div:last-child {
       width: 2.5rem;
       height: 2.5rem;
       border-radius: 8px;
-      background: ${colors["brand-red"]};
       margin-top: -2rem;
+
+      background: ${colors["brand-red"]};
+      animation: infinite circleRightAnimation 10s;
+    }
+
+    @keyframes circleLeftAnimation {
+      0% {
+        transform: translateX(45px);
+        transform: translateY(0);
+      }
+
+      50% {
+        transform: translateX(-100px);
+        transform: translateY(0);
+      }
+
+      75% {
+        transform: translateX(-100px);
+        transform: translateY(-32px);
+      }
+
+      100% {
+        transform: translateX(45px);
+        transform: translateY(0);
+      }
+    }
+
+    @keyframes circleRightAnimation {
+      0% {
+        transform: translateX(0);
+        transform: translateY(0);
+      }
+
+      50% {
+        transform: translateY(32px);
+        transform: translateX(-25px);
+      }
+
+      75% {
+        transform: translateX(-15px);
+        transform: translateY(32px);
+      }
+
+      100% {
+        transform: translateX(0);
+        transform: translateY(0);
+      }
     }
 
     @media (max-width: 768px) {

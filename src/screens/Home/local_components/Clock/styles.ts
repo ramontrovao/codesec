@@ -58,6 +58,7 @@ export const ClockContainer = styled.div`
 
     @media (max-width: 768px) {
       flex-wrap: wrap;
+      gap: 2rem;
       width: 100%;
 
       div {
