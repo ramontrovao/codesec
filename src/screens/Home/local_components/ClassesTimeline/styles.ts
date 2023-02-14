@@ -51,9 +51,10 @@ export const Title = styled.div`
     h2 {
       color: ${colors["white100"]};
       font-size: ${fontSizes["large-sm"]};
+      text-align: center;
 
       @media (max-width: 768px) {
-        font-size: ${fontSizes["medium-md"]};
+        font-size: ${fontSizes["large-sm-mobile"]};
       }
     }
   `}

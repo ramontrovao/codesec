@@ -48,6 +48,10 @@ export const LeftWrapper = styled.div`
       font-size: ${fontSizes["large-sm"]};
       color: ${colors["white100"]};
       line-height: 0.95;
+
+      @media (max-width: 768px) {
+        font-size: ${fontSizes["large-sm-mobile"]};
+      }
     }
 
     p {
@@ -56,10 +60,6 @@ export const LeftWrapper = styled.div`
     }
 
     @media (max-width: 768px) {
-      h1 {
-        font-size: ${fontSizes["medium-md"]};
-      }
-
       width: 100%;
     }
   `}

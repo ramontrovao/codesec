@@ -26,7 +26,10 @@ export const DefaultTheme = {
   fontSizes: {
     "medium-md": "1.125rem",
     "medium-lg": "1.5rem",
+
     "large-sm": "4rem",
     "large-md": "6rem",
+
+    "large-sm-mobile": "1.75rem",
   },
 } as const;

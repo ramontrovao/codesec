@@ -40,7 +40,7 @@ export const TopLeftWrapper = styled.div`
       font-size: ${fontSizes["large-sm"]};
 
       @media (max-width: 768px) {
-        font-size: ${fontSizes["medium-md"]};
+        font-size: ${fontSizes["large-sm-mobile"]};
       }
     `}
 

@@ -8,6 +8,10 @@ export const InstructorTitle = styled(Title)`
   @media (max-width: 768px) {
     flex-wrap: wrap;
     padding: 0 1rem;
+
+    h2 {
+      font-size: 1.75rem;
+    }
   }
 `;
 
