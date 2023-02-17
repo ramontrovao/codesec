@@ -1,5 +1,4 @@
 import styled, { css } from "styled-components";
-import { Title } from "../ClassesTimeline/styles";
 
 export const LearnWebhackingSection = styled.section`
   display: flex;
@@ -35,12 +34,4 @@ export const LeftWrapper = styled.div`
       color: ${colors["gray200"]};
     }
   `}
-`;
-
-export const LeftWrapperTitle = styled(Title)`
-  align-items: flex-start;
-
-  h2 {
-    text-align: left;
-  }
 `;

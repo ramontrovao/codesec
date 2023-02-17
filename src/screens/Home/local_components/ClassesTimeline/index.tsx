@@ -1,10 +1,11 @@
+import { Title } from "@/components/SectionTitle/styles";
 import { Class } from "./local_components/Class";
-import { Classes, ClassesTimelineSection, Title } from "./styles";
+import { Classes, ClassesTimelineSection } from "./styles";
 
 export function ClassesTimeline() {
   return (
     <ClassesTimelineSection>
-      <Title>
+      <Title position="center">
         <span>AULAS</span>
 
         <h2>O que você vai aprender?</h2>

@@ -1,19 +1,4 @@
 import styled, { css } from "styled-components";
-import { Title } from "../ClassesTimeline/styles";
-
-export const InstructorTitle = styled(Title)`
-  align-items: flex-start;
-  padding: 0 7rem;
-
-  @media (max-width: 768px) {
-    flex-wrap: wrap;
-    padding: 0 1rem;
-
-    h2 {
-      font-size: 1.75rem;
-    }
-  }
-`;
 
 export const WhoIsTheInstructorSection = styled.div`
   display: flex;

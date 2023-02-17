@@ -1,5 +1,6 @@
+import { Title } from "@/components/SectionTitle/styles";
 import { Question } from "./local_components/Question";
-import { FAQSection, FAQTitle, QuestionsContainer } from "./styles";
+import { FAQSection, QuestionsContainer } from "./styles";
 
 const frequentQuestions = [
   {
@@ -43,11 +44,11 @@ const frequentQuestions = [
 export function FAQ() {
   return (
     <FAQSection>
-      <FAQTitle>
+      <Title position="left">
         <span>FAQ</span>
 
         <h2>Pergunta frequentes</h2>
-      </FAQTitle>
+      </Title>
 
       <QuestionsContainer>
         {frequentQuestions.map(({ title, question, id }) => (

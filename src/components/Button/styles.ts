@@ -1,7 +1,9 @@
 import styled, { css } from "styled-components";
 
-export const ButtonBrandRedContainer = styled.a`
+export const Button = styled.a`
   ${({ theme: { colors, fontSizes } }) => css`
+    text-align: center;
+
     padding: 1rem;
     border: 0;
     border-radius: 4px;

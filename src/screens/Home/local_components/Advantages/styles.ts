@@ -17,13 +17,6 @@ export const AdvantageSection = styled.section`
       flex-direction: column;
       gap: 0.75rem;
 
-      div {
-        background: ${colors["brand-red"]};
-        color: ${colors["white100"]};
-        padding: 0.75rem;
-        border-radius: 999px;
-      }
-
       p {
         font-size: ${fontSizes["medium-md"]};
         color: ${colors["gray100"]};

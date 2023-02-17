@@ -1,5 +1,4 @@
 import styled, { css } from "styled-components";
-import { Title } from "../ClassesTimeline/styles";
 
 interface CustomerInfoProps {
   isActive: boolean;
@@ -13,14 +12,6 @@ export const FeedbacksSection = styled.section`
 
   @media (max-width: 768px) {
     padding: 5rem 1rem;
-  }
-`;
-
-export const FeedbackTitle = styled(Title)`
-  align-items: flex-start;
-
-  h2 {
-    text-align: left;
   }
 `;
 

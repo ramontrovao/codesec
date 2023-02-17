@@ -26,4 +26,21 @@ export const GlobalStyles = createGlobalStyle`
         -webkit-user-select: none;
         -ms-user-select: none;
     }
+
+    ::-webkit-scrollbar {
+    width: 1rem;
+    }
+
+    ::-webkit-scrollbar-track {
+        background: transparent;
+    }
+    
+    ::-webkit-scrollbar-thumb {
+    background: #E83752; 
+    border-radius: 999px;
+    }
+
+    ::-webkit-scrollbar-thumb:hover {
+    background: #D4203B; 
+    }
 `;

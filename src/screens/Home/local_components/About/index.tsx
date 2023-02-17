@@ -1,3 +1,5 @@
+import { Paragraph } from "@/components/Paragraph/styles";
+import { TitleH2 } from "@/components/TitleH2/styles";
 import Image from "next/image";
 import { Fingerprint, Key, LockKeyOpen, MagnifyingGlass } from "phosphor-react";
 import { LeftWrapper } from "./styles";
@@ -9,12 +11,14 @@ export function About() {
       <LeftWrapper>
         <span>INFOS</span>
 
-        <h2>Sobre a Websérie</h2>
+        <TitleH2 colorVariant="white100" fontVariant="large-sm">
+          Sobre a Websérie
+        </TitleH2>
 
-        <p>
+        <Paragraph colorVariant="gray200" fontVariant="medium-md">
           Aprenda PHP do Jeito Certo Utilizando 100% de Tecnologia Moderna e os
           Melhores Padrões de Projeto Nessa Webserie 100% Online e GRATUITA
-        </p>
+        </Paragraph>
 
         <ul>
           <li>

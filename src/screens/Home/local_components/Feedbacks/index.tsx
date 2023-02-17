@@ -15,8 +15,8 @@ import {
   FeedbackParagraphContainer,
   FeedbacksContent,
   FeedbacksSection,
-  FeedbackTitle,
 } from "./styles";
+import { Title } from "@/components/SectionTitle/styles";
 
 type customerInfosType = {
   id: number;
@@ -70,10 +70,10 @@ export function Feedbacks() {
 
   return (
     <FeedbacksSection>
-      <FeedbackTitle>
+      <Title position="left">
         <span>DEPOIMENTOS</span>
         <h2>O que estão dizendo sobre a Websérie</h2>
-      </FeedbackTitle>
+      </Title>
 
       <FeedbacksContent>
         <CustomersWrapper>

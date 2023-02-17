@@ -33,33 +33,6 @@ export const ClassesTimelineSection = styled.section`
   `}
 `;
 
-export const Title = styled.div`
-  ${({ theme: { colors, fontSizes } }) => css`
-    display: flex;
-    flex-direction: column;
-    gap: 0.5rem;
-    justify-content: center;
-    align-items: center;
-
-    span {
-      color: ${colors["brand-red"]};
-      font-size: ${fontSizes["medium-md"]};
-      letter-spacing: 0.15rem;
-      font-weight: bold;
-    }
-
-    h2 {
-      color: ${colors["white100"]};
-      font-size: ${fontSizes["large-sm"]};
-      text-align: center;
-
-      @media (max-width: 768px) {
-        font-size: ${fontSizes["large-sm-mobile"]};
-      }
-    }
-  `}
-`;
-
 export const Classes = styled.section`
   display: flex;
   flex-direction: column;

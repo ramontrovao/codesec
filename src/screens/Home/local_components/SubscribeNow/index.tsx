@@ -1,3 +1,4 @@
+import { Button } from "@/components/Button/styles";
 import Image from "next/image";
 import { SubscribeNowForm, SubscribeNowSection } from "./styles";
 
@@ -18,7 +19,7 @@ export function SubscribeNow() {
           <input type="text" placeholder="Seu nome" />
           <input type="email" placeholder="Seu melhor e-mail" />
 
-          <button>QUERO ME CADASTRAR</button>
+          <Button>QUERO ME CADASTRAR</Button>
         </SubscribeNowForm>
       </div>
     </SubscribeNowSection>

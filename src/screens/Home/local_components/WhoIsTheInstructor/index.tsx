@@ -1,8 +1,8 @@
+import { Title } from "@/components/SectionTitle/styles";
 import Image from "next/image";
 import {
   InstructorInfos,
   InstructorInfosWrapper,
-  InstructorTitle,
   Profile,
   WhoIsTheInstructorSection,
 } from "./styles";
@@ -10,10 +10,10 @@ import {
 export function WhoIsTheInstructor() {
   return (
     <WhoIsTheInstructorSection>
-      <InstructorTitle>
+      <Title position="center">
         <span>SEU MENTOR</span>
         <h2>Quem é o instrutor?</h2>
-      </InstructorTitle>
+      </Title>
 
       <InstructorInfosWrapper>
         <Profile>

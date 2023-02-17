@@ -1,20 +1,17 @@
-import { ButtonBrandRed } from "@/components/ButtonBrandRed";
+import { Button } from "@/components/Button/styles";
+import { Title } from "@/components/SectionTitle/styles";
 import Image from "next/image";
-import {
-  LearnWebhackingSection,
-  LeftWrapper,
-  LeftWrapperTitle,
-} from "./styles";
+import { LearnWebhackingSection, LeftWrapper } from "./styles";
 
 export function LearnWebhacking() {
   return (
     <LearnWebhackingSection>
       <LeftWrapper>
-        <LeftWrapperTitle>
+        <Title position="left">
           <span>PARTICIPE</span>
 
           <h2>Aprenda Webhacking</h2>
-        </LeftWrapperTitle>
+        </Title>
 
         <p>
           Cadastre-se e garanta um aprendizado de qualidade sobre webhacking com
@@ -23,7 +20,7 @@ export function LearnWebhacking() {
           mollitia praesentium in eaque eligendi officiis.
         </p>
 
-        <ButtonBrandRed text="QUERO ME CADASTRAR" />
+        <Button>QUERO ME CADASTRAR</Button>
       </LeftWrapper>
 
       <Image src="/mobile-preview.svg" width={270} height={560} alt="" />
