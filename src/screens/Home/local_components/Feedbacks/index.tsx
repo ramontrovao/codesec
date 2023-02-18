@@ -17,6 +17,8 @@ import {
   FeedbacksSection,
 } from "./styles";
 import { Title } from "@/components/SectionTitle/styles";
+import { Strong } from "@/components/Strong/styles";
+import { Span } from "@/components/Span/styles";
 
 type customerInfosType = {
   id: number;
@@ -95,9 +97,15 @@ export function Feedbacks() {
                   />
 
                   <div>
-                    <strong>{costumerName}</strong>
-                    <span>{costumerVocation}</span>
-                    <span>{costumerState}</span>
+                    <Strong colorVariant="white100" fontVariant="medium-strong">
+                      {costumerName}
+                    </Strong>
+                    <Span colorVariant="gray200" fontVariant="medium-md">
+                      {costumerVocation}
+                    </Span>
+                    <Span colorVariant="gray200" fontVariant="medium-md">
+                      {costumerState}
+                    </Span>
                   </div>
                 </CustomerInfo>
               )

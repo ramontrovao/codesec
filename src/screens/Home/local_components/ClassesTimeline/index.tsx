@@ -1,4 +1,6 @@
+import { AnchorButtonStyled } from "@/components/Anchor/styles";
 import { Title } from "@/components/SectionTitle/styles";
+import { TitleH2 } from "@/components/TitleH2/styles";
 import { Class } from "./local_components/Class";
 import { Classes, ClassesTimelineSection } from "./styles";
 
@@ -8,7 +10,9 @@ export function ClassesTimeline() {
       <Title position="center">
         <span>AULAS</span>
 
-        <h2>O que você vai aprender?</h2>
+        <TitleH2 fontVariant="large-sm" colorVariant="white100">
+          O que você vai aprender?
+        </TitleH2>
       </Title>
 
       <Classes>
@@ -49,7 +53,7 @@ export function ClassesTimeline() {
         />
       </Classes>
 
-      <a href="">CADASTRE-SE AGORA</a>
+      <AnchorButtonStyled href="">CADASTRE-SE AGORA</AnchorButtonStyled>
     </ClassesTimelineSection>
   );
 }

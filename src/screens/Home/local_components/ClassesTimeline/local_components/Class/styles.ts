@@ -4,7 +4,7 @@ interface RightClassContainerProps {
   contentDirection: "left" | "right";
 }
 
-export const RightClassContainer = styled.div<RightClassContainerProps>`
+export const ClassContainer = styled.div<RightClassContainerProps>`
   display: flex;
   justify-content: center;
   align-items: center;

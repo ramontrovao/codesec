@@ -1,10 +1,12 @@
+import { Paragraph } from "@/components/Paragraph/styles";
+import { Title } from "@/components/SectionTitle/styles";
+import { Strong } from "@/components/Strong/styles";
 import { Eye } from "phosphor-react";
 import {
   BottomWrapper,
   HowItWorksSection,
   Steps,
   TopContainer,
-  TopLeftWrapper,
   TopMiddleWrapper,
   TopRightWrapper,
 } from "./styles";
@@ -13,11 +15,11 @@ export function HowItWorks() {
   return (
     <HowItWorksSection>
       <TopContainer>
-        <TopLeftWrapper>
+        <Title position="left">
           <span>VANTAGENS</span>
 
           <h2>Como funciona a Websérie?</h2>
-        </TopLeftWrapper>
+        </Title>
 
         <TopMiddleWrapper>
           <div></div>
@@ -25,11 +27,11 @@ export function HowItWorks() {
         </TopMiddleWrapper>
 
         <TopRightWrapper>
-          <p>
+          <Paragraph fontVariant="medium-md" colorVariant="gray200">
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem vitae
             velit fuga quibusdam nostrum. Cum maxime iure ipsum tempore
             consequuntur?
-          </p>
+          </Paragraph>
         </TopRightWrapper>
       </TopContainer>
 
@@ -43,12 +45,14 @@ export function HowItWorks() {
           </header>
 
           <main>
-            <strong>Passo 1</strong>
+            <Strong colorVariant="white100" fontVariant="medium-lg">
+              Passo 1
+            </Strong>
 
-            <p>
+            <Paragraph colorVariant="gray200" fontVariant="medium-md">
               Lorem ipsum dolor, sit amet consectetur adipisicing elit. Hic quae
               sunt, at exercitationem similique sequi aspernatur est impedit!
-            </p>
+            </Paragraph>
           </main>
         </Steps>
 
@@ -61,12 +65,14 @@ export function HowItWorks() {
           </header>
 
           <main>
-            <strong>Passo 1</strong>
+            <Strong colorVariant="white100" fontVariant="medium-lg">
+              Passo 1
+            </Strong>
 
-            <p>
+            <Paragraph colorVariant="gray200" fontVariant="medium-md">
               Lorem ipsum dolor, sit amet consectetur adipisicing elit. Hic quae
               sunt, at exercitationem similique sequi aspernatur est impedit!
-            </p>
+            </Paragraph>
           </main>
         </Steps>
 
@@ -79,12 +85,14 @@ export function HowItWorks() {
           </header>
 
           <main>
-            <strong>Passo 1</strong>
+            <Strong colorVariant="white100" fontVariant="medium-lg">
+              Passo 1
+            </Strong>
 
-            <p>
+            <Paragraph colorVariant="gray200" fontVariant="medium-md">
               Lorem ipsum dolor, sit amet consectetur adipisicing elit. Hic quae
               sunt, at exercitationem similique sequi aspernatur est impedit!
-            </p>
+            </Paragraph>
           </main>
         </Steps>
       </BottomWrapper>

@@ -24,31 +24,6 @@ export const TopContainer = styled.div`
   }
 `;
 
-export const TopLeftWrapper = styled.div`
-  ${({ theme: { colors, fontSizes } }) => css`
-  max-width: 48rem;
-
-    span {
-      color: ${colors["brand-red"]};
-      font-size: ${fontSizes["medium-md"]};
-      letter-spacing: 0.15rem;
-      font-weight: bold;
-    }
-
-    h2 {
-      color: ${colors["white100"]};
-      font-size: ${fontSizes["large-sm"]};
-
-      @media (max-width: 768px) {
-        font-size: ${fontSizes["large-sm-mobile"]};
-      }
-    `}
-
-  @media (max-width: 768px) {
-    max-width: 100%;
-  }
-`;
-
 export const TopMiddleWrapper = styled.div`
   ${({ theme: { colors, fontSizes } }) => css`
     display: flex;
@@ -69,6 +44,7 @@ export const TopMiddleWrapper = styled.div`
       margin-top: -2rem;
 
       background: ${colors["brand-red"]};
+      box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
       animation: infinite circleRightAnimation 10s;
     }
 

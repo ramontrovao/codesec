@@ -1,28 +1,44 @@
+import { Span } from "@/components/Span/styles";
+import { Strong } from "@/components/Strong/styles";
 import { ClockContainer, ClockSection } from "./styles";
 
 export function Clock() {
   return (
     <ClockSection>
       <ClockContainer>
-        <strong>O evento começa em:</strong>
+        <Strong colorVariant="white100" fontVariant="medium-lg">
+          O evento começa em:
+        </Strong>
 
         <div>
           <div>
-            <strong>00</strong>
+            <Strong colorVariant="white100" fontVariant="large-sm">
+              00
+            </Strong>
 
-            <span>dias</span>
+            <Span colorVariant="white100" fontVariant="medium-md">
+              dias
+            </Span>
           </div>
 
           <div>
-            <strong>00</strong>
+            <Strong colorVariant="white100" fontVariant="large-sm">
+              00
+            </Strong>
 
-            <span>dias</span>
+            <Span colorVariant="white100" fontVariant="medium-md">
+              dias
+            </Span>
           </div>
 
           <div>
-            <strong>00</strong>
+            <Strong colorVariant="white100" fontVariant="large-sm">
+              00
+            </Strong>
 
-            <span>horas</span>
+            <Span colorVariant="white100" fontVariant="medium-md">
+              horas
+            </Span>
           </div>
         </div>
       </ClockContainer>

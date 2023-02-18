@@ -1,8 +1,11 @@
+import { Paragraph } from "@/components/Paragraph/styles";
+import { Span } from "@/components/Span/styles";
+import { Strong } from "@/components/Strong/styles";
 import { MagnifyingGlass } from "phosphor-react";
 import {
+  ClassContainer,
   LeftWrapper,
   MiddleWrapper,
-  RightClassContainer,
   RightWrapper,
 } from "./styles";
 
@@ -24,11 +27,15 @@ export function Class({
   contentDirection,
 }: ClassProps) {
   return (
-    <RightClassContainer contentDirection={contentDirection}>
+    <ClassContainer contentDirection={contentDirection}>
       <LeftWrapper>
-        <strong>{classDate}</strong>
+        <Strong fontVariant="large-sm" colorVariant="white100">
+          {classDate}
+        </Strong>
 
-        <span>{classDateDescription}</span>
+        <Span fontVariant="medium-md" colorVariant="brand-red">
+          {classDateDescription}
+        </Span>
       </LeftWrapper>
 
       <MiddleWrapper>
@@ -42,8 +49,10 @@ export function Class({
 
         <h3>{classTitle}</h3>
 
-        <p>{classResume}</p>
+        <Paragraph fontVariant="medium-md" colorVariant="gray200">
+          {classResume}
+        </Paragraph>
       </RightWrapper>
-    </RightClassContainer>
+    </ClassContainer>
   );
 }

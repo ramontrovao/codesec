@@ -1,6 +1,6 @@
 import styled, { css } from "styled-components";
 
-export const Button = styled.a`
+export const AnchorButtonStyled = styled.a`
   ${({ theme: { colors, fontSizes } }) => css`
     text-align: center;
 

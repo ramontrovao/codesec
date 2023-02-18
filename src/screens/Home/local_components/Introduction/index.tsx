@@ -1,4 +1,4 @@
-import { Button } from "@/components/Button/styles";
+import { AnchorButtonStyled } from "@/components/Anchor/styles";
 import { Paragraph } from "@/components/Paragraph/styles";
 import { Span } from "@/components/Span/styles";
 import Image from "next/image";
@@ -41,7 +41,7 @@ export function Introduction() {
             <input type="email" placeholder="Seu melhor e-mail" />
           </div>
 
-          <Button>QUERO ME CADASTRAR</Button>
+          <AnchorButtonStyled>QUERO ME CADASTRAR</AnchorButtonStyled>
         </form>
 
         <Span colorVariant="brand-red" fontVariant="medium-md">
