@@ -1,6 +1,7 @@
 import { Paragraph } from "@/components/Paragraph/styles";
 import { Span } from "@/components/Span/styles";
 import { Strong } from "@/components/Strong/styles";
+import { TitleH3 } from "@/components/TitleH3/styles";
 import { MagnifyingGlass } from "phosphor-react";
 import {
   ClassContainer,
@@ -47,9 +48,11 @@ export function Class({
           <strong>AULA {classNumber}</strong>
         </div>
 
-        <h3>{classTitle}</h3>
+        <TitleH3 fontVariant="medium-lg" colorVariant="white100">
+          {classTitle}
+        </TitleH3>
 
-        <Paragraph fontVariant="medium-md" colorVariant="gray200">
+        <Paragraph fontVariant="medium-md" colorVariant="gray200" align="left">
           {classResume}
         </Paragraph>
       </RightWrapper>

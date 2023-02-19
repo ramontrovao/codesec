@@ -37,15 +37,13 @@ export const CustomersWrapper = styled.div`
 `;
 
 export const CustomersInfosSection = styled.section`
-  ${({ theme: { colors, fontSizes } }) => css`
-    display: flex;
-    flex-direction: column;
-    gap: 2.5rem;
-  `}
+  display: flex;
+  flex-direction: column;
+  gap: 2.5rem;
 `;
 
 export const CustomerInfo = styled.div<CustomerInfoProps>`
-  ${({ theme: { colors, fontSizes }, isActive }) => css`
+  ${({ isActive }) => css`
     display: flex;
     align-items: center;
     gap: 2rem;
@@ -75,20 +73,18 @@ export const CustomerInfo = styled.div<CustomerInfoProps>`
 `;
 
 export const FeedbackParagraphContainer = styled.div`
-  ${({ theme: { colors, fontSizes } }) => css`
-    display: flex;
-    flex-direction: column;
-    gap: 1rem;
-    width: 45%;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  width: 45%;
 
-    @media (max-width: 768px) {
-      width: 100%;
-    }
-  `}
+  @media (max-width: 768px) {
+    width: 100%;
+  }
 `;
 
 export const ButtonsWrapper = styled.div`
-  ${({ theme: { colors, fontSizes } }) => css`
+  ${({ theme: { colors } }) => css`
     align-self: flex-end;
     display: flex;
     gap: 0.5rem;

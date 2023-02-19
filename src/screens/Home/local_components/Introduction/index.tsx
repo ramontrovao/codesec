@@ -9,7 +9,7 @@ import { IntroductionSection, LeftWrapper, RightWrapper } from "./styles";
 
 export function Introduction() {
   return (
-    <IntroductionSection>
+    <IntroductionSection id="intro">
       <LeftWrapper>
         <Span colorVariant="brand-red" fontVariant="medium-md">
           <IconCircleContainer padding={5} variant="white">
@@ -50,7 +50,9 @@ export function Introduction() {
             <input type="email" placeholder="Seu melhor e-mail" />
           </div>
 
-          <AnchorButtonStyled>QUERO ME CADASTRAR</AnchorButtonStyled>
+          <AnchorButtonStyled href="#intro">
+            QUERO ME CADASTRAR
+          </AnchorButtonStyled>
         </form>
 
         <Span colorVariant="brand-red" fontVariant="medium-md">

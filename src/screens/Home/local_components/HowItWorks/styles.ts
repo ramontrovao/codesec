@@ -25,7 +25,7 @@ export const TopContainer = styled.div`
 `;
 
 export const TopMiddleWrapper = styled.div`
-  ${({ theme: { colors, fontSizes } }) => css`
+  ${({ theme: { colors } }) => css`
     display: flex;
 
     div:first-child {
@@ -99,28 +99,23 @@ export const TopMiddleWrapper = styled.div`
 `;
 
 export const TopRightWrapper = styled.div`
-  ${({ theme: { colors, fontSizes } }) => css`
-        max-width: 22.25rem;
+  max-width: 22.25rem;
 
-        @media (max-width: 768px) {
-          max-width: 100%;
-        }
-    }
-  `}
+  @media (max-width: 768px) {
+    max-width: 100%;
+  }
 `;
 
 export const BottomWrapper = styled.div`
-  ${({ theme: { colors, fontSizes } }) => css`
-    display: grid;
-    justify-content: center;
-    align-items: center;
-    gap: 1rem;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-  `}
+  display: grid;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
 `;
 
 export const Steps = styled.div`
-  ${({ theme: { colors, fontSizes } }) => css`
+  ${({ theme: { colors } }) => css`
     min-height: 20rem;
     padding: 1rem;
 

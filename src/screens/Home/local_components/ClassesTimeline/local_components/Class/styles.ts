@@ -8,8 +8,8 @@ export const ClassContainer = styled.div<RightClassContainerProps>`
   display: flex;
   justify-content: center;
   align-items: center;
-  flex-direction: ${(props) =>
-    props.contentDirection === "right" ? "row" : "row-reverse"};
+  flex-direction: ${({ contentDirection }) =>
+    contentDirection === "right" ? "row" : "row-reverse"};
   gap: 1.5rem;
 
   @media (max-width: 768px) {
@@ -18,22 +18,8 @@ export const ClassContainer = styled.div<RightClassContainerProps>`
 `;
 
 export const LeftWrapper = styled.div`
-  ${({ theme: { colors, fontSizes } }) => css`
-    display: flex;
-    flex-direction: column;
-
-    strong {
-      font-size: ${fontSizes["large-sm"]};
-      color: ${colors["white100"]};
-    }
-
-    span {
-      font-size: ${fontSizes["medium-md"]};
-      color: ${colors["brand-red"]};
-      font-weight: bold;
-      letter-spacing: 0.15rem;
-    }
-  `}
+  display: flex;
+  flex-direction: column;
 `;
 
 export const MiddleWrapper = styled.div`
@@ -52,7 +38,7 @@ export const MiddleWrapper = styled.div`
 `;
 
 export const RightWrapper = styled.div`
-  ${({ theme: { colors, fontSizes } }) => css`
+  ${({ theme: { colors } }) => css`
     display: flex;
     flex-direction: column;
     gap: 1rem;
@@ -64,34 +50,20 @@ export const RightWrapper = styled.div`
     border-radius: 4px;
 
     div {
-      ${({ theme: { colors, fontSizes } }) => css`
-        display: flex;
-        justify-content: center;
-        align-items: center;
+      display: flex;
+      justify-content: center;
+      align-items: center;
 
-        max-width: 7rem;
-        padding: 0.5rem 0.25rem;
-        border-radius: 4px;
+      max-width: 7rem;
+      padding: 0.5rem 0.25rem;
+      border-radius: 4px;
 
-        background: linear-gradient(243.46deg, #fa5770 16.66%, #e83752 83.34%);
+      background: linear-gradient(243.46deg, #fa5770 16.66%, #e83752 83.34%);
 
-        strong {
-          font-size: ${fontSizes["medium-md"]};
-          color: ${colors["gray700"]};
-          font-weight: bold;
-          letter-spacing: 0.15rem;
-        }
-      `}
-    }
-
-    h3 {
-      font-size: ${fontSizes["medium-lg"]};
-      color: ${colors["white100"]};
-    }
-
-    p {
-      font-size: ${fontSizes["medium-md"]};
-      color: ${colors["gray200"]};
+      strong {
+        font-weight: bold;
+        letter-spacing: 0.15rem;
+      }
     }
   `}
 `;

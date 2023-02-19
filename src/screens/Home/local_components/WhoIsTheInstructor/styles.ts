@@ -19,7 +19,7 @@ export const InstructorInfosWrapper = styled.div`
 `;
 
 export const Profile = styled.div`
-  ${({ theme: { colors, fontSizes } }) => css`
+  ${({ theme: { colors } }) => css`
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -36,19 +36,15 @@ export const Profile = styled.div`
 `;
 
 export const InstructorInfos = styled.div`
-  ${({ theme: { colors, fontSizes } }) => css`
-    display: flex;
-    flex-direction: column;
-    width: 50%;
+  display: flex;
+  flex-direction: column;
+  width: 50%;
 
-    p {
-      font-size: ${fontSizes["medium-md"]};
-      color: ${colors["gray200"]};
-      margin-bottom: 1rem;
-    }
+  p {
+    margin-bottom: 1rem;
+  }
 
-    @media (max-width: 768px) {
-      width: 100%;
-    }
-  `}
+  @media (max-width: 768px) {
+    width: 100%;
+  }
 `;

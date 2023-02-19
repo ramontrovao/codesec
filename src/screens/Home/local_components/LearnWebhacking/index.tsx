@@ -21,7 +21,9 @@ export function LearnWebhacking() {
           mollitia praesentium in eaque eligendi officiis.
         </Paragraph>
 
-        <AnchorButtonStyled>QUERO ME CADASTRAR</AnchorButtonStyled>
+        <AnchorButtonStyled href="#intro">
+          QUERO ME CADASTRAR
+        </AnchorButtonStyled>
       </LeftWrapper>
 
       <Image src="/mobile-preview.svg" width={270} height={560} alt="" />

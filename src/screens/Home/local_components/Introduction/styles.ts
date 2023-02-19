@@ -18,28 +18,26 @@ export const IntroductionSection = styled.section`
 `;
 
 export const LeftWrapper = styled.div`
-  ${({ theme: { colors, fontSizes } }) => css`
+  display: flex;
+  flex-direction: column;
+  width: 45%;
+  gap: 1rem;
+
+  span,
+  a {
     display: flex;
-    flex-direction: column;
-    width: 45%;
-    gap: 1rem;
+    align-items: center;
+    gap: 0.25rem;
+    font-weight: bold;
+  }
 
-    span,
-    a {
-      display: flex;
-      align-items: center;
-      gap: 0.25rem;
-      font-weight: bold;
-    }
-
-    @media (max-width: 768px) {
-      width: 100%;
-    }
-  `}
+  @media (max-width: 768px) {
+    width: 100%;
+  }
 `;
 
 export const RightWrapper = styled.div`
-  ${({ theme: { colors, fontSizes } }) => css`
+  ${({ theme: { colors } }) => css`
     display: flex;
     flex-direction: column;
     justify-content: center;

@@ -1,37 +1,35 @@
 import styled, { css } from "styled-components";
 
 export const SubscribeNowSection = styled.section`
-  ${({ theme: { colors, fontSizes } }) => css`
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 10rem 7rem;
+
+  div {
+    margin-top: -6rem;
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding: 10rem 7rem;
 
     div {
-      margin-top: -6rem;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-
-      div {
-        margin-top: 1rem;
-      }
-
-      padding: 2rem 0;
+      margin-top: 1rem;
     }
 
-    @media (max-width: 768px) {
-      img {
-        width: 100%;
-      }
+    padding: 2rem 0;
+  }
 
-      padding: 0 1rem;
+  @media (max-width: 768px) {
+    img {
+      width: 100%;
     }
-  `}
+
+    padding: 0 1rem;
+  }
 `;
 
 export const SubscribeNowForm = styled.form`
-  ${({ theme: { colors, fontSizes } }) => css`
+  ${({ theme: { colors } }) => css`
     display: flex;
     flex-direction: column;
     gap: 1.5rem;

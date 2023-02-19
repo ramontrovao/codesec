@@ -53,7 +53,7 @@ export function ClassesTimeline() {
         />
       </Classes>
 
-      <AnchorButtonStyled href="">CADASTRE-SE AGORA</AnchorButtonStyled>
+      <AnchorButtonStyled href="#intro">CADASTRE-SE AGORA</AnchorButtonStyled>
     </ClassesTimelineSection>
   );
 }

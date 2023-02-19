@@ -1,4 +1,4 @@
-import styled, { css } from "styled-components";
+import styled from "styled-components";
 
 export const LearnWebhackingSection = styled.section`
   display: flex;
@@ -21,15 +21,13 @@ export const LearnWebhackingSection = styled.section`
 `;
 
 export const LeftWrapper = styled.div`
-  ${({ theme: { colors, fontSizes } }) => css`
-    display: flex;
-    align-items: flex-start;
-    flex-direction: column;
-    width: 50%;
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
+  width: 50%;
 
-    p {
-      margin-top: 1rem;
-      margin-bottom: 2.5rem;
-    }
-  `}
+  p {
+    margin-top: 1rem;
+    margin-bottom: 2.5rem;
+  }
 `;

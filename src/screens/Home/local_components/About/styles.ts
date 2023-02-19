@@ -25,11 +25,6 @@ export const LeftWrapper = styled.div`
     gap: 1.5rem;
     width: 60%;
 
-    p {
-      color: ${colors["gray200"]};
-      font-size: ${fontSizes["medium-md"]};
-    }
-
     ul {
       display: flex;
       flex-direction: column;

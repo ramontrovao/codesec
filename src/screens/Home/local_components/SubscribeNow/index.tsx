@@ -20,7 +20,9 @@ export function SubscribeNow() {
           <input type="text" placeholder="Seu nome" />
           <input type="email" placeholder="Seu melhor e-mail" />
 
-          <AnchorButtonStyled>QUERO ME CADASTRAR</AnchorButtonStyled>
+          <AnchorButtonStyled href="#intro">
+            QUERO ME CADASTRAR
+          </AnchorButtonStyled>
         </SubscribeNowForm>
       </div>
     </SubscribeNowSection>
