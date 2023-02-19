@@ -1,3 +1,4 @@
+import { ColorsType, FontType } from "@/@types/styled";
 import styled, { css } from "styled-components";
 
 export const AnchorButtonStyled = styled.a`
@@ -19,6 +20,30 @@ export const AnchorButtonStyled = styled.a`
 
     &:hover {
       background: ${colors["brand-red-dark"]};
+    }
+  `}
+`;
+
+interface AnchorProps {
+  colorVariant: keyof ColorsType;
+  fontVariant: keyof FontType;
+  underline: boolean;
+}
+
+export const Anchor = styled.a<AnchorProps>`
+  ${({
+    theme: { colors, fontSizes },
+    colorVariant,
+    fontVariant,
+    underline,
+  }) => css`
+    font-size: ${fontSizes[fontVariant]};
+    color: ${colors[colorVariant]};
+    text-decoration: ${underline ? "underline" : "none"};
+    transition: 0.4s;
+
+    &:hover {
+      color: ${colors["brand-red-dark"]};
     }
   `}
 `;

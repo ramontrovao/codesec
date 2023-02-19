@@ -28,12 +28,6 @@ export const ClockContainer = styled.div`
       rgba(232, 55, 82, 0) 100%
     );
 
-    strong {
-      color: ${colors["white100"]};
-      font-size: ${fontSizes["medium-lg"]};
-      text-align: center;
-    }
-
     div {
       display: flex;
       justify-content: space-around;
@@ -44,15 +38,6 @@ export const ClockContainer = styled.div`
         flex-direction: column;
         justify-content: center;
         align-items: center;
-
-        strong {
-          font-size: ${fontSizes["large-sm"]};
-        }
-
-        span {
-          color: ${colors["white100"]};
-          font-size: ${fontSizes["medium-md"]};
-        }
       }
     }
 

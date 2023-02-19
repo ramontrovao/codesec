@@ -1,3 +1,4 @@
+import { Anchor } from "@/components/Anchor/styles";
 import { Paragraph } from "@/components/Paragraph/styles";
 import { Title } from "@/components/SectionTitle/styles";
 import { Strong } from "@/components/Strong/styles";
@@ -29,7 +30,11 @@ export function WhoIsTheInstructor() {
         </Profile>
 
         <InstructorInfos>
-          <Paragraph colorVariant="gray200" fontVariant="medium-md">
+          <Paragraph
+            colorVariant="gray200"
+            fontVariant="medium-md"
+            align="left"
+          >
             Lorem ipsum dolor, sit amet consectetur adipisicing elit. Cumque,
             totam quibusdam maxime assumenda porro illum accusamus. Possimus
             accusantium delectus atque odit eos enim facere fuga ratione nihil
@@ -38,7 +43,14 @@ export function WhoIsTheInstructor() {
             officiis! Distinctio cumque maiores accusamus pariatur eveniet!
           </Paragraph>
 
-          <a href="">Saiba mais</a>
+          <Anchor
+            colorVariant="brand-red"
+            fontVariant="medium-md"
+            underline={false}
+            href=""
+          >
+            Saiba mais
+          </Anchor>
         </InstructorInfos>
       </InstructorInfosWrapper>
     </WhoIsTheInstructorSection>

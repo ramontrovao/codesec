@@ -1,4 +1,5 @@
 import { Paragraph } from "@/components/Paragraph/styles";
+import { Title } from "@/components/SectionTitle/styles";
 import { TitleH2 } from "@/components/TitleH2/styles";
 import Image from "next/image";
 import { Fingerprint, Key, LockKeyOpen, MagnifyingGlass } from "phosphor-react";
@@ -7,15 +8,15 @@ import { AboutSection } from "./styles";
 
 export function About() {
   return (
-    <AboutSection>
+    <AboutSection id="about">
       <LeftWrapper>
-        <span>INFOS</span>
+        <Title position="left">
+          <span>INFOS</span>
 
-        <TitleH2 colorVariant="white100" fontVariant="large-sm">
-          Sobre a Websérie
-        </TitleH2>
+          <h2>Sobre a Websérie</h2>
+        </Title>
 
-        <Paragraph colorVariant="gray200" fontVariant="medium-md">
+        <Paragraph colorVariant="gray200" fontVariant="medium-md" align="left">
           Aprenda PHP do Jeito Certo Utilizando 100% de Tecnologia Moderna e os
           Melhores Padrões de Projeto Nessa Webserie 100% Online e GRATUITA
         </Paragraph>

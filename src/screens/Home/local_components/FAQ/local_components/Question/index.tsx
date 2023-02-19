@@ -29,8 +29,9 @@ export function Question({ title, question }: QuestionProps) {
       {isActive && (
         <main>
           <ParagraphMotion
-            colorVariant="white100"
-            fontVariant="medium-strong"
+            colorVariant="gray200"
+            fontVariant="medium-md"
+            align="left"
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             transition={{ duration: 0.4 }}

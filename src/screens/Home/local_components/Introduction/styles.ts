@@ -29,34 +29,7 @@ export const LeftWrapper = styled.div`
       display: flex;
       align-items: center;
       gap: 0.25rem;
-
-      font-size: ${fontSizes["medium-md"]};
-      color: ${colors["brand-red"]};
       font-weight: bold;
-
-      div {
-        color: ${colors["white100"]};
-        background: ${colors["brand-red"]};
-        line-height: 0;
-
-        padding: 0.25rem;
-        border-radius: 999px;
-      }
-    }
-
-    h1 {
-      font-size: ${fontSizes["large-sm"]};
-      color: ${colors["white100"]};
-      line-height: 0.95;
-
-      @media (max-width: 768px) {
-        font-size: ${fontSizes["large-sm-mobile"]};
-      }
-    }
-
-    p {
-      font-size: ${fontSizes["medium-md"]};
-      color: ${colors["gray300"]};
     }
 
     @media (max-width: 768px) {

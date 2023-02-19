@@ -1,11 +1,13 @@
+import { FontType } from "@/@types/styled";
 import styled, { css } from "styled-components";
 
 interface TitleProps {
   position: "left" | "center";
+  titleCustomSize?: keyof FontType;
 }
 
 export const Title = styled.div<TitleProps>`
-  ${({ theme: { colors, fontSizes }, position }) => css`
+  ${({ theme: { colors, fontSizes }, position, titleCustomSize }) => css`
     display: flex;
     flex-direction: column;
     gap: 0.5rem;
@@ -21,7 +23,9 @@ export const Title = styled.div<TitleProps>`
 
     h2 {
       color: ${colors["white100"]};
-      font-size: ${fontSizes["large-sm"]};
+      font-size: ${titleCustomSize
+        ? fontSizes[titleCustomSize]
+        : fontSizes["large-sm"]};
       text-align: ${position === "center" ? "center" : "flex-start"};
 
       @media (max-width: 768px) {

@@ -5,7 +5,7 @@ interface QuestionContainerProps {
 }
 
 export const QuestionContainer = styled.div<QuestionContainerProps>`
-  ${({ theme: { colors, fontSizes }, isActive }) => css`
+  ${({ theme: { colors }, isActive }) => css`
     display: flex;
     flex-direction: column;
     gap: 1rem;
@@ -13,11 +13,6 @@ export const QuestionContainer = styled.div<QuestionContainerProps>`
     padding: 1.5rem;
 
     background: #121111;
-
-    strong,
-    p {
-      color: ${colors["white100"]};
-    }
 
     header {
       display: flex;

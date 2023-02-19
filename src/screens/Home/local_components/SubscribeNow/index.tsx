@@ -1,4 +1,5 @@
 import { AnchorButtonStyled } from "@/components/Anchor/styles";
+import { Title } from "@/components/SectionTitle/styles";
 import Image from "next/image";
 import { SubscribeNowForm, SubscribeNowSection } from "./styles";
 
@@ -10,10 +11,10 @@ export function SubscribeNow() {
       <div>
         <Image src="/logo.svg" width={134} height={98} alt="" />
 
-        <div>
+        <Title position="center" titleCustomSize="large-sm-mobile">
           <span>CADASTRE-SE</span>
-          <strong>Entre agora mesmo para a lista de espera</strong>
-        </div>
+          <h2>Entre agora mesmo para a lista de espera</h2>
+        </Title>
 
         <SubscribeNowForm>
           <input type="text" placeholder="Seu nome" />

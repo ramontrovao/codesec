@@ -10,5 +10,9 @@ export const TitleH2 = styled.h2<TitleProps>`
   ${({ theme: { colors, fontSizes }, colorVariant, fontVariant }) => css`
     font-size: ${fontSizes[fontVariant]};
     color: ${colors[colorVariant]};
+
+    @media (max-width: 768px) {
+      font-size: ${fontSizes["large-sm-mobile"]};
+    }
   `}
 `;

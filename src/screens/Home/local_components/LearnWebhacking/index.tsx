@@ -14,7 +14,7 @@ export function LearnWebhacking() {
           <h2>Aprenda Webhacking</h2>
         </Title>
 
-        <Paragraph colorVariant="gray200" fontVariant="medium-md">
+        <Paragraph colorVariant="gray200" fontVariant="medium-md" align="left">
           Cadastre-se e garanta um aprendizado de qualidade sobre webhacking com
           personalidades de renome. Lorem ipsum dolor sit amet consectetur
           adipisicing elit. Enim expedita maiores obcaecati adipisci quidem

@@ -29,9 +29,7 @@ export const LeftWrapper = styled.div`
 
     p {
       margin-top: 1rem;
-      margin-bottom: 3rem;
-      font-size: ${fontSizes["medium-md"]};
-      color: ${colors["gray200"]};
+      margin-bottom: 2.5rem;
     }
   `}
 `;

@@ -3,10 +3,12 @@ import styled, { css } from "styled-components";
 export const AboutSection = styled.section`
   min-height: 75vh;
   padding: 10rem 3.5rem;
+
   display: flex;
   justify-content: center;
   align-items: center;
   gap: 2rem;
+
   background-image: url("./bgabout.svg");
   background-repeat: no-repeat;
   background-position: center;
@@ -22,22 +24,6 @@ export const LeftWrapper = styled.div`
     flex-direction: column;
     gap: 1.5rem;
     width: 60%;
-
-    span {
-      color: ${colors["brand-red"]};
-      font-size: ${fontSizes["medium-md"]};
-      letter-spacing: 0.15rem;
-      font-weight: bold;
-    }
-
-    h2 {
-      color: ${colors["white100"]};
-      font-size: ${fontSizes["large-sm"]};
-
-      @media (max-width: 768px) {
-        font-size ${fontSizes["large-sm-mobile"]}
-      }
-    }
 
     p {
       color: ${colors["gray200"]};

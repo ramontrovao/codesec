@@ -13,6 +13,7 @@ export const InstructorInfosWrapper = styled.div`
 
   @media (max-width: 768px) {
     flex-wrap: wrap;
+    gap: 2rem;
     padding: 5rem 1rem;
   }
 `;
@@ -31,11 +32,6 @@ export const Profile = styled.div`
         border: 2px solid ${colors["brand-red"]};
       }
     }
-
-    strong {
-      font-size: ${fontSizes["medium-lg"]};
-      color: ${colors["white100"]};
-    }
   `}
 `;
 
@@ -49,17 +45,6 @@ export const InstructorInfos = styled.div`
       font-size: ${fontSizes["medium-md"]};
       color: ${colors["gray200"]};
       margin-bottom: 1rem;
-    }
-
-    a {
-      font-size: ${fontSizes["medium-md"]};
-      color: ${colors["brand-red"]};
-      text-decoration: none;
-      transition: color 0.4s;
-
-      &:hover {
-        color: ${colors["brand-red-dark"]};
-      }
     }
 
     @media (max-width: 768px) {

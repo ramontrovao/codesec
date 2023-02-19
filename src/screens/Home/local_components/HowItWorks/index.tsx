@@ -27,7 +27,11 @@ export function HowItWorks() {
         </TopMiddleWrapper>
 
         <TopRightWrapper>
-          <Paragraph fontVariant="medium-md" colorVariant="gray200">
+          <Paragraph
+            fontVariant="medium-md"
+            colorVariant="gray200"
+            align="left"
+          >
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem vitae
             velit fuga quibusdam nostrum. Cum maxime iure ipsum tempore
             consequuntur?

@@ -62,15 +62,11 @@ export const CustomerInfo = styled.div<CustomerInfoProps>`
       gap: 0.25rem;
 
       strong {
-        color: ${colors["brand-red-dark"]};
-        font-size: 1.25rem;
         transition: opacity 0.25s;
         opacity: ${isActive ? 1 : 0.25};
       }
 
       span {
-        color: ${colors["gray200"]};
-        font-size: ${fontSizes["medium-md"]};
         transition: opacity 0.25s;
         opacity: ${isActive ? 1 : 0.25};
       }
@@ -84,11 +80,6 @@ export const FeedbackParagraphContainer = styled.div`
     flex-direction: column;
     gap: 1rem;
     width: 45%;
-
-    p {
-      color: ${colors["white100"]};
-      font-size: ${fontSizes["medium-md"]};
-    }
 
     @media (max-width: 768px) {
       width: 100%;

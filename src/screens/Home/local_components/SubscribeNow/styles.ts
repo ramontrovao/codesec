@@ -15,19 +15,6 @@ export const SubscribeNowSection = styled.section`
 
       div {
         margin-top: 1rem;
-
-        span {
-          color: ${colors["brand-red"]};
-          font-size: ${fontSizes["medium-md"]};
-          letter-spacing: 0.15rem;
-          font-weight: bold;
-        }
-
-        strong {
-          color: ${colors["white100"]};
-          font-size: ${fontSizes["medium-lg"]};
-          font-weight: bold;
-        }
       }
 
       padding: 2rem 0;

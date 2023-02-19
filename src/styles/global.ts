@@ -11,6 +11,10 @@ export const GlobalStyles = createGlobalStyle`
         }
     }
 
+    html {
+        scroll-behavior: smooth;
+    }
+
     body, textarea, input, button {
         font-family: "Raleway", sans-serif;
     } 

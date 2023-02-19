@@ -19,6 +19,7 @@ import {
 import { Title } from "@/components/SectionTitle/styles";
 import { Strong } from "@/components/Strong/styles";
 import { Span } from "@/components/Span/styles";
+import { Paragraph } from "@/components/Paragraph/styles";
 
 type customerInfosType = {
   id: number;
@@ -97,7 +98,10 @@ export function Feedbacks() {
                   />
 
                   <div>
-                    <Strong colorVariant="white100" fontVariant="medium-strong">
+                    <Strong
+                      colorVariant="brand-red-dark"
+                      fontVariant="medium-strong"
+                    >
                       {costumerName}
                     </Strong>
                     <Span colorVariant="gray200" fontVariant="medium-md">
@@ -116,7 +120,13 @@ export function Feedbacks() {
             <div>
               <Image src="/quotation.svg" width={24} height={24} alt="" />
 
-              <p>{customersInfos[currentActiveCustomer].costumerFeedback}</p>
+              <Paragraph
+                colorVariant="white100"
+                fontVariant="medium-md"
+                align="left"
+              >
+                {customersInfos[currentActiveCustomer].costumerFeedback}
+              </Paragraph>
             </div>
 
             <ButtonsWrapper>

@@ -102,10 +102,6 @@ export const TopRightWrapper = styled.div`
   ${({ theme: { colors, fontSizes } }) => css`
         max-width: 22.25rem;
 
-        p {
-            color: ${colors["gray200"]};
-        }
-
         @media (max-width: 768px) {
           max-width: 100%;
         }
@@ -178,17 +174,6 @@ export const Steps = styled.div`
       align-items: center;
       justify-content: center;
       gap: 1rem;
-    }
-
-    strong {
-      font-size: ${fontSizes["medium-lg"]};
-      color: ${colors["white100"]};
-    }
-
-    p {
-      text-align: left;
-      font-size: ${fontSizes["medium-md"]};
-      color: ${colors["gray200"]};
     }
   `}
 `;
